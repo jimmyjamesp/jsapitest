@@ -1,0 +1,32 @@
+<link rel="import" href="../../bower_components/polymer/polymer-element.html">
+<link rel="import" href="esri-jsapi.html">
+<!--<link rel="import" href="../../bower_components/polymer/lib/elements/dom-if.html">-->
+<!--<link rel="import" href="../../bower_components/polymer/lib/elements/dom-repeat.html">-->
+
+<dom-module id="jsapitest-app">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]!</h2>
+  </template>
+
+  <script>
+    /** @polymerElement */
+    class JsapitestApp extends Polymer.Element {
+      static get is() { return 'jsapitest-app'; }
+      static get properties() {
+        return {
+          prop1: {
+            type: String,
+            value: 'jsapitest-app'
+          }
+        };
+      }
+    }
+
+    window.customElements.define(JsapitestApp.is, JsapitestApp);
+  </script>
+</dom-module>

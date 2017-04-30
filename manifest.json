@@ -1,0 +1,7 @@
+{
+  "name": "jsapitest",
+  "short_name": "jsapitest",
+  "description": "Testing esri jsapi with polymer",
+  "start_url": "/",
+  "display": "standalone"
+}
